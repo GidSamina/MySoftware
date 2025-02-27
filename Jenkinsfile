@@ -11,7 +11,8 @@ pipeline {
         stage('Run Script') {
             steps {
                     echo "Running NewButton.py and NewScreen.py on main branch..."
-                    bat  'python NewButton.py', 'python NewScreen.py'
+                    bat   'python NewButton.py'
+                    bat   'python NewScreen.py'
                 }
             }
         }
